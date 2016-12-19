@@ -11,16 +11,16 @@ from getTcxData import extractData
 import pylab
 
 # Get speed and power data from file.
-data = extractData( 'test.tcx' )
+data = extractData( 'hoods.tcx' )
 power = data[0]
 speed = data[1]
 
 # Set the parameters.
 m = 80.0                    # Mass of person + bike in kilograms (kg).
 g = 9.81                    # Acceleration due to gravity (ms^(-2)).
-Crr = 0.005                 # Coefficient of rolling resistance (approximately).
+Crr = 0.006                 # Coefficient of rolling resistance (approximately).
 rho = 1.225                 # Air density (kgm^(-3)).
-CdA = 0.18                 # Starting value of CdA (Boardman Superman Position).
+CdA = 0.48                 # Starting value of CdA (Boardman Superman Position).
 
 s = [0]*( len( power ) - 2 )      # Pre-allocate for the slope and virtual elevation..
 virtElev = [0]*( len( power ) - 2 )
@@ -32,7 +32,8 @@ for i in range(1,len(power)-1) :
     sum = sum + s[i-1]*speed[i-1]
     virtElev[i-1] = sum           # Calculate virtual elevation from summing changes in elevation.
 
-#plt.plot(virtElev)
+plt.plot(power)
+plt.plot(speed)
 
 
 pylab.show()
