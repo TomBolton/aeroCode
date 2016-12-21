@@ -8,7 +8,7 @@ import lxml.etree as ET
 import os
 from os import path
 
-def extractData( fileName ) :       # Input is the filename, e.g. my_ride.tcx.
+def getTcxData( fileName ) :       # Input is the filename, e.g. my_ride.tcx.
 
     # Make a string of the path to the tcx file.
     pathStr = str( path.realpath( fileName ) )
@@ -35,7 +35,7 @@ def extractData( fileName ) :       # Input is the filename, e.g. my_ride.tcx.
     powerList = []
     speedList = []
 
-    for i in range(1,len(trackPoints)-1) :
+    for i in range(2,len(trackPoints)-1) :
         powerList.append( int( trackPoints[i][7][0][0].text ) )
         speedList.append( float( trackPoints[i][3].text ) - float( trackPoints[i-1][3].text ) )
 
