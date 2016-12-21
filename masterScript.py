@@ -25,7 +25,7 @@ rho = 1.279  # Air density (kgm^(-3)).
 CdA = 0.18
 
 # Get speed and power data from file (change file name if needed)
-data = getTcxData( 'tcx_files/drops.tcx' )
+data = getTcxData( 'tcxFiles/hoods.tcx' )
 power = data[0]
 speed = data[1]
 
