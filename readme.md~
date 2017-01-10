@@ -5,6 +5,8 @@ Repository: aeroCode
 
 ---
 
+![alt text](https://github.com/TomBolton/aeroCode/blob/master/aeroCode_screenshot.png "Screenshot of Chung analysis using aeroCode")
+
 This collection of Python scripts takes a .tcx file recorded by some GPS tracking device (e.g. Garmin) while cycling according to the Chung method protocol; for more information on the Chung method, see http://anonymous.coward.free.fr/wattage/cda/indirect-cda.pdf. 
 
 The code assumes the ride is a 'half-pipe' ride, where you repeatedly cycle in and out of a dip in the road. You should NOT use your brakes during the ride, nor significantly change your position during the recording of the .tcx file. You should also aim to complete the ride on a stretch of road with very little traffic and low wind. If you cannot avoid strong winds, then at least complete the ride on a day where the wind is consistent i.e. little variability in time.
