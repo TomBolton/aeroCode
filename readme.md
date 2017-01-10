@@ -2,13 +2,15 @@ Author: Tom Bolton
 
 Contact: thomasmichaelbolton@gmail.com
 
-Data: 21/12/2016
+Date: 21/12/2016
 
 Repository: aeroCode
 
 ---
 
 ![alt text](https://github.com/TomBolton/aeroCode/blob/master/aeroCode_screenshot.png "Screenshot of Chung analysis using aeroCode")
+
+---
 
 This collection of Python scripts takes a .tcx file recorded by some GPS tracking device (e.g. Garmin) while cycling according to the Chung method protocol; for more information on the Chung method, see http://anonymous.coward.free.fr/wattage/cda/indirect-cda.pdf. 
 
