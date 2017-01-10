@@ -35,6 +35,7 @@ def getTcxData( fileName ) :       # Input is the filename, e.g. my_ride.tcx.
     powerList = []
     speedList = []
 
+    # Loop through the track points and extract both the power and speed data
     for i in range(2,len(trackPoints)-1) :
         powerList.append( int( trackPoints[i][7][0][0].text ) )
         speedList.append( float( trackPoints[i][3].text ) - float( trackPoints[i-1][3].text ) )

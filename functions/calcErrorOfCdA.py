@@ -9,7 +9,7 @@ def calcErrorOfCdA( virtElev, coef, res, CdA, m, g, Crr, rho, speed, power ) :
     T = len(virtElev)
     newCdA = CdA
     while T*coef < res :                                   # If change in y is less than the residual, then the
-        newCdA -= 0.0001                                    # then the regression is potentially insignificant
+        newCdA -= 0.00001                                    # then the regression is potentially insignificant
         newElev = calcVirtualElevation( newCdA, m, g, Crr, rho, speed, power )
         newMin = findLocalMinima( newElev )
         coef, _ = linearRegression( newMin)
